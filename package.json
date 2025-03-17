@@ -1,12 +1,30 @@
 {
-  "name": "utils",
-  "packageManager": "yarn@4.7.0",
+  "name": "@omins/utils",
+  "type": "module",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    },
+    "./sayHello": {
+      "types": "./dist/sayHello.d.ts",
+      "require": "./dist/sayHello.cjs",
+      "import": "./dist/sayHello.js"
+    }
+  },
+  "files": ["dist"],
   "scripts": {
     "test": "vitest"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "tsup": "^8.4.0",
     "typescript": "^5.8.2",
     "vitest": "^3.0.9"
-  }
+  },
+  "packageManager": "yarn@4.7.0"
 }
