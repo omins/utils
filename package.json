@@ -16,15 +16,18 @@
       "import": "./dist/sayHello.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "vitest"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@changesets/cli": "^2.28.1",
     "tsup": "^8.4.0",
     "typescript": "^5.8.2",
     "vitest": "^3.0.9"
   },
-  "packageManager": "yarn@4.7.0"
+  "packageManager": "yarn@4.9.0"
 }
